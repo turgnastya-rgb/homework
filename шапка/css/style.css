@@ -1,0 +1,39 @@
+html {
+	font-family: sans-serif;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	margin-left: 20px;
+}
+.container {
+	max-width: 1320px;
+	padding: 10px 15px;
+	margin: 0 auto;
+	border-bottom: 1px solid #b3b3b3;
+}
+
+.header_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+a {
+	color: black;
+}
+
+.tel {
+	font-weight: bold;
+}
