@@ -1,72 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Форма</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<form>
-			<fieldset>
-				<legend>Ваши личные данные</legend>
-				<label>
-					<span class="name">Ваше имя</span>
-					<input type="text" placeholder="Имя" name="name" required />
-				</label>
-				<label>
-					<span class="name">Ваш возраст</span>
-					<input
-						type="number"
-						placeholder="Возраст"
-						name="age"
-						inputmode="numeric"
-						required
-					/>
-				</label>
-				<label>
-					<span class="name">Ваш номер телефона</span>
-					<input
-						type="tel"
-						placeholder="Номер телефона"
-						name="phone"
-						inputmode="tel"
-						required
-					/>
-				</label>
-				<label>
-					<span class="name">Ваша почта</span>
-					<input
-						type="email"
-						placeholder="Почта"
-						name="email"
-						inputmode="email"
-						required
-					/>
-				</label>
-			</fieldset>
-			<fieldset>
-				<label>
-					<span class="name">Сообщение</span>
-					<textarea
-						placeholder="Ваше сообщение"
-						name="message"
-						required
-					></textarea>
-				</label>
-			</fieldset>
-			<label>
+		<form class="form">
+			<fieldset class="form-group">
+				<legend class="form-group-title">Ваши личные данные</legend>
+				<label for="name" class="label"> Ваше имя</label>
 				<input
-					class="checkbox"
-					type="checkbox"
-					name="checkbox"
-					value="checkbox"
+					id="name"
+					class="input"
+					type="text"
+					placeholder="Имя"
+					name="name"
 					required
-					checked
 				/>
-				Я принимаю правила
-			</label>
-			<button type="submit">Отправить</button>
+				<label for="age" class="label">Ваш возраст</label>
+				<input
+					id="age"
+					class="input"
+					type="number"
+					placeholder="Возраст"
+					name="age"
+					inputmode="numeric"
+					required
+				/>
+				<label for="phone" class="label">Ваш номер телефона</label>
+				<input
+					id="phone"
+					class="input"
+					type="tel"
+					placeholder="Номер телефона"
+					name="phone"
+					inputmode="tel"
+					required
+				/>
+				<label for="email" class="label">Ваша почта</label>
+				<input
+					id="email"
+					class="input"
+					type="email"
+					placeholder="Почта"
+					name="email"
+					inputmode="email"
+					required
+				/>
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="message" class="label">Сообщение</label>
+				<textarea
+					id="message"
+					class="textarea"
+					placeholder="Ваше сообщение"
+					name="message"
+					required
+				></textarea>
+				<label class="label">
+					<input
+						class="checkbox"
+						type="checkbox"
+						name="checkbox"
+						value="checkbox"
+						required
+						checked
+					/>
+					<span class="checkbox-text">Я принимаю правила</span>
+				</label>
+			</fieldset>
+			<button class="button" type="submit">Отправить</button>
 		</form>
 	</body>
 </html>
